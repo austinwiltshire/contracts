@@ -1,14 +1,14 @@
-def foo(x, y):
-	x = x + 3
+def foo(x_1, y):
+	x_1 = x_1 + 3
 
-	#process invariant?
+	#process invariant
 	assert x >= 3, "X must be greater than 3"
 
-	x = x + y
+	x_2 = x_1 + y
 
 	...
 
-	#process invariant?
-	assert x >= y, "X must be greater than y"
+	#process invariant
+	assert x_2 >= y, "X must be greater than y"
 
-	return x
+	return x_2
