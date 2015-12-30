@@ -4,4 +4,4 @@ def validate_input(unsafe_input):
 	safe_input = magic_and_stuff(unsafe_input)
 
 	#postconditions
-	assert contains_no_sql(safe_input)
+	assert contains_no_sql(safe_input), "Output has been verified as being sql free"
